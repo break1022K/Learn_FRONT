@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table, tr th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- table>(tr>td{hello}*3)*3 -->
+        <table>
+            <tr>
+                <th>책 번호</th>
+                <th>책 이름</th>
+                <th>책 판매량</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>야! 너두 할 수 있어! Python</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>야! 너두 할 수 있어! HTML/CSS</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>야! 너두 할 수 있어! JavaScript</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td colspan="2">판매량</td>
+                <td>111</td>
+            </tr>
+        </table>
+    </body>
+</html>

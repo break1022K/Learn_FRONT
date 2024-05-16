@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* id 선택자 */
+            /* 특징 1 : id는 무너 내에 유일해야 합니다. */
+            /* URL#one 이렇게 된 형태에서 # 뒤에 있는 것을 프래그먼트 */
+            /* 특징 2 : class와 다르게 중복해서 적용시킬 수 없습니다. */
+            #one {
+                color:red;
+            }
+            #two {
+                color:green;
+            }
+            #three {
+                color:blue;
+            }
+            #border {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="one">hello world</p>
+        <p id="two">hello world</p>
+        <p id="three">hello world</p>
+        <!-- <p id="one border">NOT</p> -->
+    </body>
+</html>

@@ -1,0 +1,38 @@
+연봉 3200 이상
+
+3G ABC
+IPO
+
+https://www.jejutp.or.kr/
+
+https://www.books.weniv.co.kr/basecamp-network
+[CRUD]
+Create - POST
+Read - GET
+Update - PUT, PATCH
+Delete - DELETE
+
+HTML = 문서
+웹브라우저 = 리더기
+
+CSS
+Sass
+
+모카스크립트 (2주)
+라이브스크립트
+자바스크립트
+
+표준 스크립트 : 에크마 스크립트
+
+UI, 함수, Data
+
+flexngrid.com
+
+XSS
+
+Global CDN 마비
+
+---
+BOM - API
+DOM - API
+JavaScript
