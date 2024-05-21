@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <button class="one">one</button>
+        <button class="two">two</button>
+        <button class="three">three</button>
+    </body>
+    <script>
+        const btnOne = document.querySelector('.one');
+        const btnTwo = document.querySelector('.two');
+        const btnThree = document.querySelector('.three');
+
+        btnOne.addEventListener('click', () => {
+            console.log('ONE');
+        });
+
+        btnTwo.innerHTML = 'click me';
+
+        btnThree.addEventListener('click', () => {
+            document.write('hello, world!');
+        });
+    </script>
+</html>

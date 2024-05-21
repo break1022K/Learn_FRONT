@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+            .img {
+                width: 200px;
+            }
+            h2 {
+                font-size:  20px;
+            }
+            p {
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <main class="main"></main>
+        <footer></footer>
+        <script>
+            fetch('https://test.api.weniv.co.kr/mall')
+            .then(res => res.json())
+            // .then(json => console.log(json))
+            .then(json => {
+                const mainArea = document.querySelector('.main');
+                json.forEach(item => {
+                    
+                    // Image
+                    const productImage = document.createElement('img');
+                    productImage.src = 'https://test.api.weniv.co.kr/' + item.thumbnailImg;
+                    mainArea.appendChild(productImage);
+                    
+                    // Header
+                    const productName_h2 = document.createElement('h2');
+                    productName_h2.innerText = item.productName;
+                    productName_h2.classList.add('product-name');
+                    mainArea.appendChild(productName_h2);
+
+                    // Price
+                    const productPrice = document.createElement('p');
+                    productPrice.innerText = item.price + '원';
+                    mainArea.appendChild(productPrice);
+
+                    console.log(item);
+                });
+            });
+        </script>
+    </body>
+</html>

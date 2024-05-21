@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .test {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                transition: 1s all;
+            }
+            .blue {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="test">Hello, World</div>
+        <button>CLICK</button>
+
+        <script>
+            const MyBTN = document.querySelector('button');
+            const TestAREA = document.querySelector('.test');
+
+            MyBTN.addEventListener('click', () => {
+                TestAREA.classList.toggle('blue');
+                // 클래스를 토글합니다. 있으면 넣어주고, 없으면 제거합니다.
+            })
+        </script>
+    </body>
+</html>
